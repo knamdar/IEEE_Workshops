@@ -57,7 +57,7 @@ Np.double> DoubleTensor
 # Name_of_tensor.numpy()
 torch_tensor.numpy()
 
-# Tensors can be on CPU and GPU
+# Tensors can be on CPU or GPU
 # By default, everything is on CPU
 """
 if torch.cuda.is_available():
@@ -97,12 +97,12 @@ my_var = Variable(torch.ones(3, 3), requires_grad=True)
 
 # super(…) inherits all the attributes of the class
 """
-Pytorch save models in pickle files
+Pytorch saves models in pickle files
 Model.save(model.state_dict(), ‘k_model.pk1’)
 """
 
 # CPU to GPU
-# to use GPU model & variable have to be on GPU
+# to use GPU, model & variable have to be on GPU
 """
 if torch.cuda.is_available():  # this way runs both on cpu and gpu
     model.cuda()
